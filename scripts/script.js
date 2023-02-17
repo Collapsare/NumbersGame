@@ -1,5 +1,3 @@
-const fontSizes = ['20px', '25px', '30px', '35px', '40px', '45px', '60px','70px', '80px']
-const textColors = ["red", "beige", "burlywood", "coral", "aqua", "darkcyan", "pink", "lawngreen", "fuchsia"]
 const numsList = document.querySelectorAll(".num")
 
 function getRandomColor() {
@@ -11,4 +9,11 @@ function getRandomColor() {
     return color;
   }
 
-numsList.forEach((item) => item.style.color = getRandomColor())
+
+function getRandomFontSize(min, max) {
+    return Math.floor(Math.random() * (max - min) + min) + 'px';
+}
+numsList.forEach((item) => {
+    item.style.color = getRandomColor()
+    item.style.fontSize = getRandomFontSize(20, 101)
+})
