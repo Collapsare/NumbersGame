@@ -40,3 +40,13 @@ p {
     font-size: 40px;
     font-weight: bold;
 }
+
+#btn-reset {
+    padding: 10px 5px;
+    outline: none;
+    background-color: rgb(255, 236, 197);
+    font-size: 30px;
+    border: 5px solid rgb(255, 158, 147);
+    border-radius: 5px;
+    cursor: pointer;
+}
